@@ -5,10 +5,9 @@ function Counter() {
     // How to create state variable?
     const [counter , setCounter  ] = useState(0)
 
-    let newcounter = 0
     
     const incrementCounter = ()=>{
-        newcounter = newcounter + 1
+        setCounter(counter+1)
     }
 
     const decrementCounter = () => setCounter(counter-5)
@@ -20,7 +19,7 @@ function Counter() {
             <div className='biggest-div'>
 
                 <div className='top-div'>
-                    {newcounter}
+                    {counter}
                 </div>
 
                 <div className='bottom-div'>
